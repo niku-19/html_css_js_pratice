@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --container-width-lg: 70%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --container-width-ssm: 91%;
+}
+
+.container {
+  max-width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 4rem 0rem;
+  color: whitesmoke;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .mainMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+  margin: 20px;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+nav .logo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* main */
+
+.backGround__imgae {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url("../assests/pizza1\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 93vh;
+  backdrop-filter: 100px;
+}
+
+.cravings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 90vh;
+  width: 50%;
+  color: whitesmoke;
+}
+
+.cravings h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1rem solid red;
+}
+.cravings p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* 2nd section */
+
+.sect-1-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  grid-gap: 4rem;
+  margin-top: 6rem;
+}
+
+.sect-1-child p {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+/* 2nd section */
+/* 3rd section */
+.sect-2 > p {
+  width: 50%;
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+  padding-bottom: 5px;
+  border-bottom: 4px solid red;
+}
+
+.sect-2 > p {
+  padding: 30px 0 50px 0;
+}
+
+.menu__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+.product__price {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+.product {
+  width: 40rem;
+  padding: 4rem;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #cf092c;
+  margin: 22px 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.product__title {
+  font-size: 3rem;
+  color: #000;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.1;
+}
+.product p {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.1;
+}
+/* 3rd section */
+
+.find-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  grid-gap: 4rem;
+  margin-top: 6rem;
+}
+.find-left p {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+}
+
+.foot-left > img {
+  width: 150px;
+}
+
+.foot-right a > i {
+  font-size: 20px;
+}
+
+.sms {
+  display: flex;
+  gap: 10px;
+}
+/* footer */
+
+/* main */
+
+/* hamberger */
+@media (max-width: 800px) {
+  html {
+    font-size: 20%;
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  .sect-1-child {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 4rem;
+    margin-top: 6rem;
+  }
+  .menu__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 0;
+  }
+  .find-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    width: 100%;
+  }
+  .product {
+    width: auto;
+  }
+  .map {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+  }
+  .map iframe,
+  .map object,
+  .map embed {
+    object-fit: contain;
+    background-size: contain;
+    display: none;
+  }
+}
+/* hamberger */
